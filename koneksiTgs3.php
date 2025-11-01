@@ -1,13 +1,13 @@
 <?php
-$host = "localhost";
+$server = "localhost";//127.0.0.1
 $user = "root";
-$pass = "";
-$db   = "bimbel cihuyy"; 
+$password = "";
+$database = "bimbel cihuyy"; 
 
-$conn = mysqli_connect($host, $user, $pass, $db);
-
-if (!$conn) {
-    die("Koneksi gagal: " . mysqli_connect_error());
+$koneksi = mysqli_connect($server, $user, $password, $database);
+if(!$koneksi){
+  die("koneksi gagal : ".mysqli_connect_error());
 }
+
 
 ?>
